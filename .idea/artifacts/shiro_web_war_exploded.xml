@@ -1,0 +1,45 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="shiro_web:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/shiro_web_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="shiro_web/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="shiro_web" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/aopalliance-1.0.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/shiro-web-1.3.2.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/spring-core-4.0.0.RELEASE.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/druid-0.2.23.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/aspectjweaver-1.7.4.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/jstl-1.2.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/shiro-spring-1.3.2.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/ehcache-core-2.4.3.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/log4j-1.2.17.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/jsp-api-2.2.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/mysql-connector-java-5.1.25.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/spring-beans-4.0.0.RELEASE.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/commons-beanutils-1.8.3.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/commons-logging-1.1.3.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/spring-context-4.0.0.RELEASE.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/shiro-quartz-1.3.2.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/spring-context-support-4.0.0.RELEASE.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/aspectjrt-1.7.4.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/shiro-ehcache-1.3.2.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/slf4j-api-1.6.4.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/shiro-core-1.3.2.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/spring-jdbc-4.0.0.RELEASE.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/slf4j-log4j12-1.7.2.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/jackson-all-1.9.11.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/spring-expression-4.0.0.RELEASE.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/spring-aop-4.0.0.RELEASE.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/quartz-1.6.1.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/spring-tx-4.0.0.RELEASE.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/spring-web-4.0.0.RELEASE.jar" />
+          <element id="file-copy" path="G:/JavaWeb路线/Shiro权限管理/lib1/spring-webmvc-4.0.0.RELEASE.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
