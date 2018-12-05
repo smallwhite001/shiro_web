@@ -65,7 +65,7 @@ import org.apache.shiro.util.ByteSource;
 
 	@Override
 	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-
+System.out.println(1);
 		return null;
 	}
 }
