@@ -16,6 +16,7 @@ import org.apache.shiro.crypto.hash.SimpleHash;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
 import org.apache.shiro.util.ByteSource;
+
 //	@Override
 //	public AuthenticationInfo getAuthenticationInfo(AuthenticationToken arg0) throws AuthenticationException {
 //		//总结
@@ -36,36 +37,36 @@ import org.apache.shiro.util.ByteSource;
 //
 //		return null;
 //	}
- public class ShiroRealm extends AuthorizingRealm {
-	@Override
-	protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
-		System.out.println("----------------->ShiroRealm1:------------------------------");
-		UsernamePasswordToken userToken = (UsernamePasswordToken)token;
-		//1.收集用户身份凭证，用户名/密码
+public class ShiroRealm extends AuthorizingRealm {
+    @Override
+    protected AuthenticationInfo doGetAuthenticationInfo(AuthenticationToken token) throws AuthenticationException {
+        System.out.println("----------------->ShiroRealm1:------------------------------");
+        UsernamePasswordToken userToken = (UsernamePasswordToken) token;
+        //1.收集用户身份凭证，用户名/密码
         String username = userToken.getUsername();
         //2.从数据库中获取用户信息
-		  //从数据可中获取用户名
-		//3.如果用户不存在，抛出异常
-		if("unknown".equals(username)) {
-			throw new UnknownAccountException("--------------->用户不存在");
-		}
-		//4.用户名锁定，抛出异常
-		if("test".equals(username)) {
-			throw new LockedAccountException("--------------->用户被锁定");
-		}
-		//5.返回SimpleAuthenticationInfo对象进行比对
-		SimpleAuthenticationInfo info = null;
-		Object principal = username;//实体信息
-		Object credentials = "1234567";//密码
-		String realName = getName();//当前用户的名字
-		info = new SimpleAuthenticationInfo(principal,credentials,realName);
-		return info;
-	}
+        //从数据可中获取用户名
+        //3.如果用户不存在，抛出异常
+        if ("unknown".equals(username)) {
+            throw new UnknownAccountException("--------------->用户不存在");
+        }
+        //4.用户名锁定，抛出异常
+        if ("test".equals(username)) {
+            throw new LockedAccountException("--------------->用户被锁定");
+        }
+        //5.返回SimpleAuthenticationInfo对象进行比对
+        SimpleAuthenticationInfo info ;
+        Object principal = username;//实体信息
+        Object credentials = "1234567";//密码
+        String realName = getName();//当前用户的名字
+        info = new SimpleAuthenticationInfo(principal, credentials, realName);
+        return info;
+    }
 
 
-	@Override
-	protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
-System.out.println(1);
-		return null;
-	}
+    @Override
+    protected AuthorizationInfo doGetAuthorizationInfo(PrincipalCollection principalCollection) {
+        System.out.println(1);
+        return null;
+    }
 }
